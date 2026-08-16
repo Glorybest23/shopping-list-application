@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>🛒 My Shopping List</h1>
+        <p class="subtitle">Prepare and manage your shopping list easily.</p>
+
+        <section class="form-section">
+            <input id="itemName" type="text" placeholder="Enter item name">
+            <input id="itemQuantity" type="number" min="1" placeholder="Quantity">
+            <button id="addButton">Add Item</button>
+        </section>
+
+        <input id="searchInput" type="text" placeholder="🔍 Search shopping items...">
+
+        <div class="summary">
+            <strong>Total Items: <span id="itemCount">0</span></strong>
+        </div>
+
+        <ul id="shoppingList"></ul>
+        <p id="emptyMessage" class="empty">No shopping items yet.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
