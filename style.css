@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+.container {
+    max-width: 720px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.form-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+#itemName {
+    flex: 1;
+}
+
+#itemQuantity {
+    width: 120px;
+}
+
+#searchInput {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+button {
+    border: 0;
+    padding: 11px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#addButton {
+    background: #222;
+    color: white;
+}
+
+#addButton:hover {
+    opacity: 0.8;
+}
+
+.summary {
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #eee;
+    border-radius: 7px;
+}
+
+#shoppingList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.shopping-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.item-quantity {
+    color: #666;
+    margin-top: 5px;
+}
+
+.purchased .item-name {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.purchase-btn,
+.edit-btn,
+.delete-btn {
+    background: #eee;
+}
+
+.empty {
+    text-align: center;
+    color: #777;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    .form-section {
+        flex-direction: column;
+    }
+
+    #itemQuantity {
+        width: 100%;
+    }
+
+    .shopping-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .actions {
+        justify-content: flex-end;
+    }
+}
